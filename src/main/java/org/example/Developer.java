@@ -9,8 +9,14 @@ public class Developer extends Employee{
         this.programmingLanguage = programmingLanguage;
     }
 
+
+
     @Override
     public String getSound() {
         return "Yay Java!";
+    }
+
+    public String getProgrammingLanguage() {
+        return programmingLanguage;
     }
 }

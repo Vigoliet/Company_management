@@ -7,7 +7,7 @@ public class EmployeeTests {
 
     @Test
     public void testConstructorSetName(){
-        var employee = new Employee("Linus");
+        var employee = new Employee("linus");
 
         var expected = "Linus";
         var actual = employee.getName();

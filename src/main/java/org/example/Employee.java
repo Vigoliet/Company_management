@@ -5,7 +5,7 @@ public class Employee {
     private String name;
 
     public Employee(String name) {
-        this.name = name;
+        setName(name);
     }
 
     public String getName() {
@@ -13,7 +13,9 @@ public class Employee {
     }
 
     public void setName(String name) {
-        this.name = name;
+        String firstCharacter = name.substring(0, 1).toUpperCase();
+        String rest = name.substring(1);
+        this.name = firstCharacter + rest;
     }
 
     public String getSound(){
