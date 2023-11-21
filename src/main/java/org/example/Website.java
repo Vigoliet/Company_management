@@ -12,7 +12,7 @@ public class Website {
         website.isWorking = true;
     }
 
-    public boolean isWorking() {
+    public boolean isWorkingStatus() {
         return isWorking;
     }
 }

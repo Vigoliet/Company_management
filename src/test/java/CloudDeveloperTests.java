@@ -10,7 +10,7 @@ public class CloudDeveloperTests {
         cloudDeveloper.FixWebsite(website);
 
         var expected = true;
-        var actual = website.isWorking();
+        var actual = website.isWorkingStatus();
 
         assertEquals(expected, actual);
     }
