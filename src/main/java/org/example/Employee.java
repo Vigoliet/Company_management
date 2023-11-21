@@ -12,9 +12,14 @@ public class Employee extends Person{
     }
 
     public void setName(String name) {
-        String firstCharacter = name.substring(0, 1).toUpperCase();
-        String rest = name.substring(1);
-        this.name = firstCharacter + rest;
+
+        this.name = capitalizeFirstLetter(name);
+    }
+
+    protected String capitalizeFirstLetter(String input){
+        String firstCharacter = input.substring(0, 1).toUpperCase();
+        String rest = input.substring(1);
+        return firstCharacter + rest;
     }
 
     public String getSound(){
