@@ -15,13 +15,22 @@ public class EmployeeTests {
         assertEquals(expected, actual);
     }
 
-
     @Test
     public void testGetSound(){
         var employee = new Employee("Linus");
 
         var expected = "Are we done yet?";
         var actual = employee.getSound();
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testEatFood(){
+        var employee = new Employee("Linus");
+
+        var expected = "Nom nom nom!";
+        var actual = employee.eatFood();
 
         assertEquals(expected, actual);
     }

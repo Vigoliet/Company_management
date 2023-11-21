@@ -1,8 +1,7 @@
 package org.example;
 
-public class Employee {
+public class Employee extends Person{
 
-    private String name;
 
     public Employee(String name) {
         setName(name);
@@ -20,5 +19,10 @@ public class Employee {
 
     public String getSound(){
         return "Are we done yet?";
+    }
+
+    @Override
+    public String eatFood() {
+        return "Nom nom nom!";
     }
 }
