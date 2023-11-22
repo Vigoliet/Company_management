@@ -1,6 +1,6 @@
-package org.example;
+package org.example.employees;
 
-public class Employee extends Person{
+public class Employee extends Person {
 
 
     public Employee(String name) {
